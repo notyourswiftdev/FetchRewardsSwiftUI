@@ -14,6 +14,13 @@
 		1AFAE9492A40A99600D45C0B /* FetchRewardsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE9482A40A99600D45C0B /* FetchRewardsSwiftUITests.swift */; };
 		1AFAE9532A40A99600D45C0B /* FetchRewardsSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE9522A40A99600D45C0B /* FetchRewardsSwiftUIUITests.swift */; };
 		1AFAE9552A40A99600D45C0B /* FetchRewardsSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE9542A40A99600D45C0B /* FetchRewardsSwiftUIUITestsLaunchTests.swift */; };
+		1AFAE9632A40AE1D00D45C0B /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE9622A40AE1D00D45C0B /* Dessert.swift */; };
+		1AFAE9652A40AE2300D45C0B /* MealId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE9642A40AE2300D45C0B /* MealId.swift */; };
+		1AFAE9682A40CBDB00D45C0B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE9672A40CBDB00D45C0B /* NetworkManager.swift */; };
+		1AFAE96B2A40CC0A00D45C0B /* DessertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE96A2A40CC0A00D45C0B /* DessertView.swift */; };
+		1AFAE96F2A40CC2B00D45C0B /* MealSearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE96E2A40CC2B00D45C0B /* MealSearchScreen.swift */; };
+		1AFAE9722A40DC7700D45C0B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE9712A40DC7700D45C0B /* HomeScreen.swift */; };
+		1AFAE9752A415DDE00D45C0B /* DetailedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAE9742A415DDE00D45C0B /* DetailedScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		1AFAE94E2A40A99600D45C0B /* FetchRewardsSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRewardsSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFAE9522A40A99600D45C0B /* FetchRewardsSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRewardsSwiftUIUITests.swift; sourceTree = "<group>"; };
 		1AFAE9542A40A99600D45C0B /* FetchRewardsSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRewardsSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1AFAE9622A40AE1D00D45C0B /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		1AFAE9642A40AE2300D45C0B /* MealId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealId.swift; sourceTree = "<group>"; };
+		1AFAE9672A40CBDB00D45C0B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1AFAE96A2A40CC0A00D45C0B /* DessertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertView.swift; sourceTree = "<group>"; };
+		1AFAE96E2A40CC2B00D45C0B /* MealSearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSearchScreen.swift; sourceTree = "<group>"; };
+		1AFAE9712A40DC7700D45C0B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		1AFAE9742A415DDE00D45C0B /* DetailedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,9 @@
 		1AFAE9362A40A99500D45C0B /* FetchRewardsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1AFAE9692A40CBF500D45C0B /* Screens */,
+				1AFAE9662A40CBCF00D45C0B /* Network */,
+				1AFAE9612A40AE1300D45C0B /* Models */,
 				1AFAE9372A40A99500D45C0B /* FetchRewardsSwiftUIApp.swift */,
 				1AFAE9392A40A99500D45C0B /* ContentView.swift */,
 				1AFAE93B2A40A99600D45C0B /* Assets.xcassets */,
@@ -125,6 +142,66 @@
 				1AFAE9542A40A99600D45C0B /* FetchRewardsSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = FetchRewardsSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		1AFAE9612A40AE1300D45C0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1AFAE9622A40AE1D00D45C0B /* Dessert.swift */,
+				1AFAE9642A40AE2300D45C0B /* MealId.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1AFAE9662A40CBCF00D45C0B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1AFAE9672A40CBDB00D45C0B /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1AFAE9692A40CBF500D45C0B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1AFAE9732A415DD000D45C0B /* DetailedScreen */,
+				1AFAE9702A40DC6400D45C0B /* Home */,
+				1AFAE96D2A40CC1B00D45C0B /* MealScreen */,
+				1AFAE96C2A40CC0F00D45C0B /* DessertScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1AFAE96C2A40CC0F00D45C0B /* DessertScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1AFAE96A2A40CC0A00D45C0B /* DessertView.swift */,
+			);
+			path = DessertScreen;
+			sourceTree = "<group>";
+		};
+		1AFAE96D2A40CC1B00D45C0B /* MealScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1AFAE96E2A40CC2B00D45C0B /* MealSearchScreen.swift */,
+			);
+			path = MealScreen;
+			sourceTree = "<group>";
+		};
+		1AFAE9702A40DC6400D45C0B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1AFAE9712A40DC7700D45C0B /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1AFAE9732A415DD000D45C0B /* DetailedScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1AFAE9742A415DDE00D45C0B /* DetailedScreen.swift */,
+			);
+			path = DetailedScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +335,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AFAE93A2A40A99500D45C0B /* ContentView.swift in Sources */,
+				1AFAE9752A415DDE00D45C0B /* DetailedScreen.swift in Sources */,
+				1AFAE96F2A40CC2B00D45C0B /* MealSearchScreen.swift in Sources */,
+				1AFAE9632A40AE1D00D45C0B /* Dessert.swift in Sources */,
+				1AFAE9682A40CBDB00D45C0B /* NetworkManager.swift in Sources */,
+				1AFAE9722A40DC7700D45C0B /* HomeScreen.swift in Sources */,
 				1AFAE9382A40A99500D45C0B /* FetchRewardsSwiftUIApp.swift in Sources */,
+				1AFAE9652A40AE2300D45C0B /* MealId.swift in Sources */,
+				1AFAE96B2A40CC0A00D45C0B /* DessertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
